@@ -27,10 +27,73 @@ Automated detection and counting of **Red Blood Cells (RBC)** and
 ![predictions](val_batch0_pred.jpg)
 
 ## 🛠️ Tech Stack
-- YOLOv8 by Ultralytics
-- Python
-- OpenCV
-- Kaggle
+| Tool | Usage |
+|---|---|
+| YOLOv8 | Object detection model |
+| PyTorch | Deep learning framework |
+| Ultralytics | YOLOv8 training pipeline |
+| Kaggle | Training environment (GPU T4) |
+| Python | Programming language |
+| OpenCV | Image processing |
+| Pandas | Data manipulation |
 
+---
+
+## 🚀 How to Use the Model
+
+### 1 — Install dependencies
+```bash
+pip install ultralytics
+```
+
+### 2 — Run inference
+```python
+from ultralytics import YOLO
+
+# Load model
+model = YOLO('best.pt')
+
+# Run inference
+results = model('your_blood_cell_image.png', imgsz=256, conf=0.25)
+
+# Show results
+results[0].show()
+
+# Count cells
+rbc_count = int((results[0].boxes.cls == 0).sum())
+wbc_count = int((results[0].boxes.cls == 1).sum())
+print(f"RBC: {rbc_count} | WBC: {wbc_count}")
+```
+
+---
+
+## 📁 Project Structure
+```
+blood-cell-detection/
+    📄 README.md
+    📄 LICENSE
+    
+    📄 results.png
+    📄 confusion_matrix.png
+    📄 confusion_matrix_normalized.png
+    📄 val_batch0_pred.jpg
+    📄 val_batch0_labels.jpg
+    📄 BoxPR_curve.png
+    📄 BoxF1_curve.png
+    📄 labels.jpg
+    📄 results.csv
+```
+
+---
+
+## ⚠️ Dataset Notice
+Dataset sourced from [Kaggle - Blood Cell Detection Dataset](https://www.kaggle.com/datasets/draaslan/blood-cell-detection-dataset)
+by draaslan. Used strictly for **educational and research purposes only**.
+
+---
+
+## 📚 References
+- [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
+- [Kaggle Dataset](https://www.kaggle.com/datasets/draaslan/blood-cell-detection-dataset)
 
 
