@@ -93,7 +93,7 @@ by draaslan. Used strictly for **educational and research purposes only**.
 ---
 
 ## 📚 References
-- [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
+- [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics/blob/main/docs/en/models/yolov8.md)
 - [Kaggle Dataset](https://www.kaggle.com/datasets/draaslan/blood-cell-detection-dataset)
 
 
