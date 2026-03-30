@@ -16,12 +16,7 @@ Automated detection and counting of **Red Blood Cells (RBC)** and
 | mAP@50    | 0.985 |
 | Precision | 0.981 |
 | Recall    | 0.951 |
-Best Epoch : 44
-mAP@50     : 
-mAP@50-95  : 0.844
-Precision  : 
-Recall     : 0.951
-F1 Score   : 0.966
+|F1 Score   | 0.966 |
 ## 📈 Results
 ![results](results/results.png)
 
