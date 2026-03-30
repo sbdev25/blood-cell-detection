@@ -18,13 +18,13 @@ Automated detection and counting of **Red Blood Cells (RBC)** and
 | Recall    | 0.951 |
 |F1 Score   | 0.966 |
 ## 📈 Results
-![results](results/results.png)
+![results](results.png)
 
 ## 🔀 Confusion Matrix
-![confusion](results/confusion_matrix.png)
+![confusion](confusion_matrix.png)
 
 ## 👁️ Predictions vs Ground Truth
-![predictions](results/val_batch0_pred.jpg)
+![predictions](val_batch0_pred.jpg)
 
 ## 🛠️ Tech Stack
 - YOLOv8 by Ultralytics
