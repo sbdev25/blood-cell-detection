@@ -31,20 +31,6 @@ Automated detection and counting of **Red Blood Cells (RBC)** and
 - Python
 - OpenCV
 - Kaggle
-```
 
----
 
-## Your GitHub repo will look like this:
-```
-📁 blood-cell-detection/
-    📄 README.md              ← project description
-    📁 results/
-        📄 results.png
-        📄 confusion_matrix.png
-        📄 confusion_matrix_normalized.png
-        📄 val_batch0_pred.jpg
-        📄 val_batch0_labels.jpg
-        📄 BoxPR_curve.png
-        📄 labels.jpg
-        📄 results.csv
+
